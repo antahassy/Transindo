@@ -168,6 +168,24 @@ pre{
      border-radius: 5px; 
      max-height: 300px;
 }
+#delete_preview_items2{
+     cursor: pointer;
+     text-align: center;
+     border: 1px solid red;
+     border-radius: 5px;
+     color: red;
+     background-color: #fff;
+     display: none;
+}
+#delete_preview_items2:hover{
+     color: #fff;
+     background-color: red;
+}
+#preview_items2{
+     width: 100%; 
+     border-radius: 5px; 
+     max-height: 300px;
+}
 #delete_preview_bukti{
      cursor: pointer;
      text-align: center;

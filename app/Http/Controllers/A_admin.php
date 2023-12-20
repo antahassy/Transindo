@@ -241,12 +241,12 @@ class A_admin extends Controller
         $sess_id = Session::get('admin.id');
         $sess_username = MA_admin::select('username')->where('id', $sess_id)->first()->username;
 
-        $delete_berkas = $request->delete_berkas;
-        $last_berkas = $request->get_berkas;
-
         $file_path = public_path('project/admin/image');
         $file_extension = array('jpg', 'jpeg', 'png', 'bmp', 'gif', 'svg', 'ico');
         $file_size = 5120000;//5 mb
+
+        $delete_berkas = $request->delete_berkas;
+        $last_berkas = $request->get_berkas;
         $file_upload = $request->file('berkas');
         if($file_upload != ''){
             if($file_upload->getSize() > $file_size){

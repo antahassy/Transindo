@@ -46,7 +46,7 @@ Route::group(['middleware' => 'admin_session'], function() {
 	Route::post('menu_admin/hapus', [A_menu::class, 'hapus']);
 	Route::post('menu_admin/rel_menu', [A_menu::class, 'rel_menu']);
 
-	Route::resource('setting_admin', A_setting::class);
+	Route::resource('setting_admin', A_setting::class); 
 
 	Route::resource('list_car', A_car::class);
 	Route::post('list_car/hapus', [A_car::class, 'hapus']);
